@@ -165,6 +165,11 @@ section{padding-block:clamp(3.5rem,8vw,6rem);border-top:1px solid var(--line)}
 .trait b{display:block;font-weight:600}
 .trait p{color:var(--muted);font-size:.97rem}
 .block{display:grid;gap:var(--s3);margin-top:var(--s5)}
+.kitsune-note{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--s3);align-items:start;margin-top:var(--s2);padding:var(--s4);background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--fox);border-radius:12px}
+.kitsune-note .mini-logo{width:1.9rem;margin-top:.2rem}
+.kitsune-note div{display:grid;gap:var(--s2);min-width:0}
+.kitsune-note p:not(.label){color:var(--muted);font-size:.97rem;margin:0}
+.kitsune-note b{color:var(--ink);font-weight:600}
 .chips{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;margin:0;padding:0}
 .chips li{border:1px solid var(--line);border-radius:999px;padding:.4rem .85rem;font-size:.92rem;background:var(--surface)}
 
@@ -203,7 +208,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(-
     <div class="hero">
       <div class="hero-text">
         <p class="label triad"><span data-l="es">Creatividad</span><span data-l="en">Creativity</span><i>×</i><span data-l="es">Tecnología</span><span data-l="en">Technology</span><i>×</i><span data-l="es">Curiosidad</span><span data-l="en">Curiosity</span></p>
-        <h1><span data-l="es">Ideas que merece la pena <em>construir.</em></span><span data-l="en">Ideas worth <em>building.</em></span></h1>
+        <h1><span data-l="es">Donde la curiosidad se convierte en <em>creación.</em></span><span data-l="en">Where curiosity becomes <em>creation.</em></span></h1>
         <p class="lead" data-l="es">Experimentos con IA, creaciones digitales e historias de todo el mundo.</p>
         <p class="lead" data-l="en">AI experiments, digital creations and stories from across the world.</p>
         <div class="ctas">
@@ -325,6 +330,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(-
           <p data-l="en">I'm a telecommunications engineer from the University of Málaga. I started out designing radio-frequency test cases for wireless device certification and spent almost fifteen years in that field, building support teams across Asia, Europe and North America.</p>
           <p data-l="es">Desde 2018 trabajo en Microsoft. He dirigido operaciones de soporte globales para Azure e Identity, con un ecosistema de más de 800 ingenieros de partners, y hoy lidero la estrategia de supportability de Microsoft Intune y Configuration Manager, donde la IA es una pieza central.</p>
           <p data-l="en">I've been at Microsoft since 2018. I led global support operations for Azure and Identity across an ecosystem of 800+ partner engineers, and today I lead supportability strategy for Microsoft Intune and Configuration Manager, where AI plays a central role.</p>
+          <aside class="kitsune-note">
+            <span class="logo mini-logo" aria-hidden="true"></span>
+            <div>
+              <p class="label"><span data-l="es">¿Por qué un kitsune?</span><span data-l="en">Why a kitsune?</span></p>
+              <p data-l="es">En el folclore japonés, el kitsune, el zorro, gana una cola nueva a medida que acumula años y sabiduría, hasta llegar a nueve. Así entiendo este estudio: cada proyecto es una exploración, y cada exploración, una cola más. Unas son tecnológicas, otras artísticas, otras mitológicas. <b>Todas nacen de la misma curiosidad.</b></p>
+              <p data-l="en">In Japanese folklore, the kitsune, the fox, grows a new tail as it gains age and wisdom, until it has nine. That's how I see this studio: every project is an exploration, and every exploration adds a tail. Some are technological, some artistic, some mythological. <b>All of them start with the same curiosity.</b></p>
+            </div>
+          </aside>
         </div>
         <div class="figures">
           <div class="fig"><strong>20+</strong><span data-l="es">años en organizaciones técnicas globales</span><span data-l="en">years in global technical organisations</span></div>
